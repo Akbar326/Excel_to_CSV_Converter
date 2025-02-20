@@ -32,7 +32,7 @@ if uploaded_file:
         if file_ext == ".csv":
             df = pd.read_csv(file)
         elif file_ext == ".xlsx":
-            df = pd.read_excel(file, engine='openpyxl')  # Specify engine for xlsx
+            df = pd.read_excel(file, engine='openpyxl')
         else:
             st.error("Invalid file format.")
             continue
